@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(50, 237, 250);
+    color: rgb(219, 247, 33);
+    font-family: 微軟正黑體, Courier, monospace;
+    font-weight: 400;
+  }
+  .o {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  header {
+    text-align: center;
+  }
+  .ou {
+    text-align: center;
+  }
