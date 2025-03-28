@@ -1,19 +1,31 @@
-function openiframe() {
-    const c = document.getElementsByClassName("show-classdemo")[0];
-    console.log(c);
-    switch(index){
+function openiframe(index) {
+    const iframe = document.querySelector(".show-classdemo iframe");
+
+    if (!iframe) {
+        console.error("找不到 iframe 元素！");
+        return;
+    }
+
+    let src = "";
+
+    switch (index) {
         case 1:
-            c.innerHTML = `<iframe src="w1/HW1.html"  frameborder="1"></iframe>`;
+            src = "w1/HW1.html";
             break;
         case 2:
-            c.innerHTML = `<iframe src="0314-main/card.html"  frameborder="1"></iframe>`;
+            src = '0314-main/card.html';
             break;
         case 3:
-            c.innerHTML = `<iframe src="0314-main/temp.html"  frameborder="1"></iframe>`;
+            src = "0314-main/temp.html";
             break;
         case 4:
-            c.innerHTML = `<iframe src="class/t3-3.html"  frameborder="1"></iframe>`;
+            src = "classdemo/t3_3.html";
             break;
+        default:
+            console.warn("未知的索引值:", index);
+            return;
     }
-    console.log(index);
+
+    iframe.src = src;
+    console.log(`已更改 iframe src 為: ${src}`);
 }
