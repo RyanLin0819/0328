@@ -6,10 +6,10 @@ function openiframe() {
             c.innerHTML = `<iframe src="w01/w22.html"  frameborder="1"></iframe>`;
             break;
         case 2:
-            c.innerHTML = `<iframe src="class/card_xx.html"  frameborder="1"></iframe>`;
+            c.innerHTML = `<iframe src="0314-main/card_xx.html"  frameborder="1"></iframe>`;
             break;
         case 3:
-            c.innerHTML = `<iframe src="class/blog.html"  frameborder="1"></iframe>`;
+            c.innerHTML = `<iframe src="0314-main/blog.html"  frameborder="1"></iframe>`;
             break;
         case 4:
             c.innerHTML = `<iframe src="class/t3-3.html"  frameborder="1"></iframe>`;
